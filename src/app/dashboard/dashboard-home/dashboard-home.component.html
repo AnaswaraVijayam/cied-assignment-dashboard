@@ -1,0 +1,80 @@
+<!-- header component -->
+<app-header></app-header>
+<!-- dashboard welcome tag -->
+<div style="margin-top: 4%">
+  <span class="dashboard-text">Welcome to Lead tracker!</span>
+</div>
+
+<div class="body">
+  <!-- mat-tab-group -->
+  <mat-tab-group
+    [selectedIndex]="selectedTabIndex"
+    (selectedTabChange)="changeTab($event)"
+  >
+    <!-- Active Tab -->
+    <mat-tab label="Active">
+      <div *ngIf="selectedTabIndex === 0" class="row">
+        <div class="col-md-6" style="margin-top: 4%">
+          <app-probability [stageType]="'active'"></app-probability>
+        </div>
+        <div class="col-md-6">
+          <app-graph [stageType]="'active'"></app-graph>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 0" class="row">
+        <div class="col-md-12">
+          <app-active-leads-status></app-active-leads-status>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 0" class="row">
+        <div class="col-md-12">
+          <app-lead-list [stageType]="'active'"></app-lead-list>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Won Tab -->
+    <mat-tab label="Won">
+      <div *ngIf="selectedTabIndex === 1" class="row">
+        <div class="col-md-6" style="margin-top: 4%">
+          <app-probability [stageType]="'won'"></app-probability>
+        </div>
+        <div class="col-md-6">
+          <app-graph [stageType]="'won'"></app-graph>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 1" class="row">
+        <div class="col-md-12">
+          <app-active-leads-status></app-active-leads-status>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 1" class="row">
+        <div class="col-md-12">
+          <app-lead-list [stageType]="'won'"></app-lead-list>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Lost Tab -->
+    <mat-tab label="Lost">
+      <div *ngIf="selectedTabIndex === 2" class="row">
+        <div class="col-md-6" style="margin-top: 4%">
+          <app-probability [stageType]="'lost'"></app-probability>
+        </div>
+        <div class="col-md-6">
+          <app-graph [stageType]="'lost'"></app-graph>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 2" class="row">
+        <div class="col-md-12">
+          <app-active-leads-status></app-active-leads-status>
+        </div>
+      </div>
+      <div *ngIf="selectedTabIndex === 2" class="row">
+        <div class="col-md-12">
+          <app-lead-list [stageType]="'lost'"></app-lead-list>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

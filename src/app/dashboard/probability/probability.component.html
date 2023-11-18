@@ -1,0 +1,40 @@
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-success progress-bg"
+    role="progressbar"
+    [style.width]="pbData?.high_percent + '%'"
+  >
+    <span class="pb-text">
+      {{ pbData?.high_percent }}% High probability to win</span
+    >
+  </div>
+  <span class="pb-textRight">{{ pbData?.high_count }}Leads</span>
+</div>
+<br />
+
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-success progress-bgMedium"
+    role="progressbar"
+    [style.width]="pbData?.medium_percent + '%'"
+  >
+    <span class="pb-text">
+      {{ pbData?.medium_percent }}% Medium probability to win</span
+    >
+  </div>
+  <span class="pb-textRight">{{ pbData?.medium_count }}Leads</span>
+</div>
+<br />
+
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-success progress-bgLow"
+    role="progressbar"
+    [style.width]="pbData?.low_percent + '%'"
+  >
+    <span class="pb-text">
+      {{ pbData?.low_percent }}% Low probability to win</span
+    >
+  </div>
+  <span class="pb-textRight">{{ pbData?.low_count }}Leads</span>
+</div>

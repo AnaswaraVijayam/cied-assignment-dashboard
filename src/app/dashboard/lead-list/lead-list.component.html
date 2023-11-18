@@ -1,0 +1,51 @@
+<div class="container" [formGroup]="formGroup">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <div class="input-group mb-3">
+        <span class="header">Recently active leads</span>
+        <mat-form-field class="example-form-field">
+          <mat-icon class="icon__style" (click)="search()">search</mat-icon>
+          <input
+            class="text"
+            matInput
+            placeholder="Search leads"
+            formControlName="searchText"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th *ngFor="let header of tableHeaders">{{ header }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of tableDatas">
+        <td>{{ item.name }}</td>
+        <td>{{ item.created_on }}</td>
+        <td>{{ item.current_stage.name }}</td>
+        <td>{{ item.deal_value }}</td>
+        <td
+          class="text-font"
+          [style.color]="getProbabilityStyle(item.probability).textColor"
+          [style.background]="
+            getProbabilityStyle(item.probability).backgroundColor
+          "
+        >
+          {{ getProbabilityStyle(item.probability).text }}
+        </td>
+        <td>{{ item.organization.team_size }}</td>
+        <td>{{ item.organization.country }}</td>
+        <td>{{ item.organization.revenue }}</td>
+        <td>{{ item.category.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button class="btn btn-primary" (click)="viewAll()">View All</button>
+    </div>
+  </div>
+</div>

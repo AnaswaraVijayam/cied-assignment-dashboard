@@ -1,0 +1,48 @@
+<div class="container" [formGroup]="loginForm">
+  <div class="row">
+    <!-- Left column -->
+    <div
+      class="col-md-6 split left"
+      style="background-image: url(assets/login-img1.png); height: 100%"
+    >
+      <img class="logo" src="assets/logo_At.png" />
+      <span class="text-font"> All I need to tell you is Listen </span>
+      <span class="text-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+      <div
+        class="d-flex flex-column align-items-end justify-content-end login-img"
+      >
+        <img class="login-subimg" src="assets/logo-header.png" />
+        <img src="assets/logo-img12.png" class="mb-0 ml-auto login-subimg" />
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="col-md-6 split right" style="margin-top: 15%">
+      <div style="margin: 25px">
+        <h1 class="welcome-text">Welcome</h1>
+        <span class="text">Login with username and password</span>
+        <div class="form-group">
+          <label class="text1">Email address</label>
+          <input type="text" class="form-control" formControlName="username" />
+        </div>
+        <div class="form-group">
+          <label class="text1" for="pwd">Password</label>
+          <input
+            type="password"
+            formControlName="password"
+            class="form-control"
+          />
+        </div>
+        <div class="btn-container">
+          <button class="btn btn-primary login-button" (click)="login()">
+            Login
+          </button>
+          <p>Don't have an account? <a href="#!">Signup</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

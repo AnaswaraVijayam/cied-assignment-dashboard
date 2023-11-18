@@ -1,0 +1,11 @@
+<label class="custom-label">Active leads status</label>
+
+<div class="card-container">
+  <mat-card *ngFor="let item of data" class="card">
+    <mat-card-content>
+      <span class="card-text">{{ item.name }}</span
+      ><br />
+      <span class="card-text">{{ item.lead_count }}</span>
+    </mat-card-content>
+  </mat-card>
+</div>

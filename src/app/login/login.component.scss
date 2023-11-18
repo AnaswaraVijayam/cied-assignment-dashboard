@@ -1,0 +1,146 @@
+.split {
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  margin-left: 2px;
+  background-color: white;
+}
+
+.img {
+  background-image: url("/src/assets/login-img1.png");
+  background-size: cover;
+}
+.form-group {
+  margin-top: 20px;
+}
+.btn-container {
+  position: relative;
+  .btn {
+    margin-top: 30px;
+  }
+  .error {
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    color: red;
+  }
+}
+.form-control {
+  width: 60% !important;
+}
+.text {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.text1 {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.logo {
+  width: 81px;
+  height: 55px;
+  margin-top: 155px;
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.text-font {
+  font-family: Urbanist;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.text-description {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #9a9797;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+.login-button {
+  width: 60%;
+  margin-top: 20px;
+}
+.welcome-text {
+  width: 174px;
+  height: 48px;
+  top: 175px;
+  left: 840px;
+}
+.login-img {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.login-subimg {
+  max-width: 100%;
+  height: auto;
+  margin-right: -2%;
+}

@@ -1,0 +1,44 @@
+.progress,
+.progress-stacked {
+  height: 70px;
+  background-color: f7f2f2;
+  margin-top: 4px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.pb-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  padding-left: 5%;
+}
+.pb-textRight {
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+}
+.progress-bgLow {
+  background: #f8cdd9;
+}
+.progress-bgMedium {
+  background: #f9d8f8;
+}
+.progress-bg {
+  background: #c9ecdc;
+}

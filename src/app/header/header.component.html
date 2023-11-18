@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <!-- Logo -->
+    <img class="logo-img" src="assets/logo_At.png" alt="Logo" />
+
+    <!-- Tabs -->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link link-primary">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Leads</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-lead">
+      <mat-icon class="icon-style" style="margin-right: 8px">search</mat-icon>
+      <div style="position: relative">
+        <input
+          type="text"
+          class="form-control border rounded-pill select-text"
+          placeholder="Search leads"
+        />
+      </div>
+    </div>
+
+    <!-- Add Button -->
+    <button class="btn-primary btn-sm border rounded-pill add-button">
+      <mat-icon style="padding-right: 1%" class="icon-style">add</mat-icon>
+      Add Leads
+    </button>
+
+    <!-- User-related data -->
+    <div class="navbar-nav ml-auto user_settings">
+      <ul class="navbar-nav">
+        <!-- User Image -->
+        <li class="nav-item">
+          <img
+            src="{{ data?.image }}"
+            alt="User Image"
+            class="nav-link user-image"
+          />
+        </li>
+
+        <!-- User Name -->
+        <li class="nav-item" style="margin-right: 6%">
+          <span class="nav-link" style="margin-right: 3%">
+            {{ data?.first_name }}{{ data?.last_name }}
+          </span>
+        </li>
+
+        <!-- Settings  -->
+        <li class="nav-item">
+          <div class="icon">
+            <i class="material-icons icon-style">settings</i>
+          </div>
+        </li>
+
+        <!-- Logout -->
+        <li class="nav-item">
+          <div class="icon" (click)="logout()">
+            <i class="material-icons icon-style">logout</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

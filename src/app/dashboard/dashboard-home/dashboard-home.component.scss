@@ -1,0 +1,28 @@
+.nav-pills .nav-link {
+  border-radius: 20px;
+  width: 129px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.dashboard-text {
+  font-family: Urbanist;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  margin-left: 4%;
+}
+:host ::ng-deep {
+  .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs
+    > .mat-mdc-tab-header
+    .mat-mdc-tab {
+    flex-grow: 0;
+  }
+}
+.body {
+  margin-top: 2%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+}

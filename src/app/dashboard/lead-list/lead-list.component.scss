@@ -1,0 +1,45 @@
+:host ::ng-deep {
+  .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(
+      .mdc-text-field--textarea
+    )
+    .mat-mdc-form-field-infix {
+    display: flex;
+    :hover {
+      background-color: unset !important;
+    }
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background: white;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 50px;
+    :hover {
+      background-color: unset !important;
+    }
+  }
+}
+.text {
+  font-family: Urbanist;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 50%;
+}
+.header {
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 4%;
+}
+.text-font {
+  font-family: Urbanist;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+}
